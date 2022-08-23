@@ -1,0 +1,23 @@
+{
+  "name": "browser-filereader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eedrxs/browser-filereader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eedrxs/browser-filereader/issues"
+  },
+  "homepage": "https://github.com/eedrxs/browser-filereader#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
