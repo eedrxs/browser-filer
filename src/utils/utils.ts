@@ -1,10 +1,8 @@
 function createFileInput(isMultiple = false): HTMLInputElement {
-  const fileInput = {
-    ...document.createElement('input'),
-    type: 'file',
-    multiple: isMultiple,
-    style: { display: 'hidden' },
-  };
+  const fileInput = document.createElement('input');
+  fileInput.type = 'file';
+  fileInput.multiple = isMultiple;
+  fileInput.style.display = 'hidden';
 
   document.body.appendChild(fileInput);
   fileInput.click();
