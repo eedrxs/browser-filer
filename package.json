@@ -1,24 +1,46 @@
 {
   "name": "browser-filereader",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A library for programmatically reading system files from the browser without using a file input element",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
+    "test": "jest --config jest.config.ts",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eedrxs/browser-filereader.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "filereader",
+    "file-reader"
+  ],
+  "author": "Idris Abdul-Lateef",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/eedrxs/browser-filereader/issues"
   },
   "homepage": "https://github.com/eedrxs/browser-filereader#readme",
   "devDependencies": {
+    "@types/jest": "^28.1.8",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.8",
+    "ts-node": "^10.9.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.7.4"
-  }
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
