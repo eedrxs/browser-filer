@@ -1,6 +1,6 @@
 {
-  "name": "browser-fileread",
-  "version": "1.0.4",
+  "name": "browser-filer",
+  "version": "0.0.1",
   "description": "A library for programmatically reading system files from the browser without using a file input element",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
