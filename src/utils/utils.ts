@@ -1,4 +1,4 @@
-function createFileInput(isMultiple = false): HTMLInputElement {
+export function createFileInput(isMultiple = false): HTMLInputElement {
   const fileInput = document.createElement('input');
   fileInput.type = 'file';
   fileInput.multiple = isMultiple;
@@ -9,7 +9,7 @@ function createFileInput(isMultiple = false): HTMLInputElement {
   return fileInput as HTMLInputElement;
 }
 
-function createFilePromise(fileInput: HTMLInputElement): Promise<FileList | null> {
+export function createFilePromise(fileInput: HTMLInputElement): Promise<FileList | null> {
   return new Promise((resolve) => {
     fileInput.onchange = (event) => {
       const files = (event.target as HTMLInputElement).files;
@@ -18,5 +18,3 @@ function createFilePromise(fileInput: HTMLInputElement): Promise<FileList | null
     };
   });
 }
-
-export { createFileInput, createFilePromise };

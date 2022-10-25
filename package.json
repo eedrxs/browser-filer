@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eedrxs/browser-filereader.git"
+    "url": "git+https://github.com/eedrxs/browser-filer.git"
   },
   "keywords": [
     "filereader",
@@ -26,9 +26,9 @@
   "author": "Idris Abdul-Lateef",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eedrxs/browser-filereader/issues"
+    "url": "https://github.com/eedrxs/browser-filer/issues"
   },
-  "homepage": "https://github.com/eedrxs/browser-filereader#readme",
+  "homepage": "https://github.com/eedrxs/browser-filer#readme",
   "devDependencies": {
     "@types/jest": "^28.1.8",
     "jest": "^28.1.3",
